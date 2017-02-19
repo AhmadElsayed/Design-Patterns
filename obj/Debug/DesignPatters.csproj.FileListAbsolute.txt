@@ -1,0 +1,1 @@
+E:\DesignPatters\DesignPatters\bin\Debug\DesignPatters.exe.config
