@@ -1,13 +1,13 @@
-﻿
-namespace DesignPatterns.ObserverDesignPattern
-{
-    internal enum EnumLanguage
-    {
-        English,
-        German,
-        French
-    }
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using DesignPatterns.ObserverDesignPattern;
+using DesignPatterns.Shared;
 
+namespace DesignPatterns
+{
     /// <summary>
     /// #Motivation
     /// Using this pattern i can track a specific Proprty to do action or change a specific behavior depending on it
@@ -34,12 +34,26 @@ namespace DesignPatterns.ObserverDesignPattern
     ///     5. The Notify Observers by its role, loop at all the Observers and call the Update method with the new value of the changed property.
     ///     6. The Update function in each observer do its job depending on its new value.
     /// </summary>
-    internal interface IObserver
+    internal class Observer : IPattern
     {
-        /// <summary>
-        /// Specific event handling on each observer depending on its business
-        /// </summary>
-        /// <param name="language">New updated value</param>
-        void Update(EnumLanguage language);
+        public void Test()
+        {
+            var tracker = new LanguageTracker();
+
+            var observe = new LanguageObserver(tracker);
+
+            tracker.SetCurrentLang(EnumLanguage.English);
+            tracker.SetCurrentLang(EnumLanguage.French);
+            tracker.SetCurrentLang(EnumLanguage.German);
+
+
+            var observe2 = new LanguageObserver(tracker);
+
+            tracker.SetCurrentLang(EnumLanguage.German);
+
+            tracker.RemoveObserver(observe);
+
+            tracker.SetCurrentLang(EnumLanguage.French);
+        }
     }
 }

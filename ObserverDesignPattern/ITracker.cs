@@ -1,13 +1,8 @@
 ﻿
+using System.Collections.Generic;
+
 namespace DesignPatterns.ObserverDesignPattern
 {
-    internal enum EnumLanguage
-    {
-        English,
-        German,
-        French
-    }
-
     /// <summary>
     /// #Motivation
     /// Using this pattern i can track a specific Proprty to do action or change a specific behavior depending on it
@@ -34,12 +29,23 @@ namespace DesignPatterns.ObserverDesignPattern
     ///     5. The Notify Observers by its role, loop at all the Observers and call the Update method with the new value of the changed property.
     ///     6. The Update function in each observer do its job depending on its new value.
     /// </summary>
-    internal interface IObserver
+    internal interface ITracker
     {
         /// <summary>
-        /// Specific event handling on each observer depending on its business
+        /// Add the new Observer to the Tracker's Observers List
         /// </summary>
-        /// <param name="language">New updated value</param>
-        void Update(EnumLanguage language);
+        /// <param name="observer">The Observer to be added</param>
+        void RegisterObserver(IObserver observer);
+
+        /// <summary>
+        /// Remove a specific observer from the observers list
+        /// </summary>
+        /// <param name="observer">The lucky observer that will be free</param>
+        void RemoveObserver(IObserver observer);
+
+        /// <summary>
+        /// Loop in all observers and Update them with the new changed property
+        /// </summary>
+        void NotifyObserver();
     }
 }

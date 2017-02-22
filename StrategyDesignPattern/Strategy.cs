@@ -3,8 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using DesignPatterns.Shared;
+using DesignPatterns.StrategyDesignPattern;
 
-namespace DesignPatterns.StrategyDesignPattern
+namespace DesignPatterns
 {
     /// <summary>
     /// #Motivation
@@ -32,21 +34,18 @@ namespace DesignPatterns.StrategyDesignPattern
     ///        Initialize the object i have created (in step2) with the suitable handle way
     /// 
     /// </summary>
-    public class Animal
+    internal class Strategy : IPattern
     {
-        /// <summary>
-        /// Property of the IFLY interface 
-        /// </summary>
-        IFly _flyingType;
-
-        protected void SetFlyingType(IFly flyingType)
+        public void Test()
         {
-            this._flyingType = flyingType;
-        }
+            var dog = new Dog();
+            var bird = new Bird();
 
-        public void TryToFly()
-        {
-            this._flyingType.Fly();
+            Console.WriteLine("Dog: ");
+            dog.TryToFly();
+            Console.WriteLine("Bird: ");
+            bird.TryToFly();
         }
     }
 }
+

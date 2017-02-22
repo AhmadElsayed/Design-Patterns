@@ -19,3 +19,6 @@ D:\Work\MySampleWork\DesignPatterns\obj\Debug\DesignPatterns.pdb
 D:\Work\Library\DesignPatterns\bin\Debug\DesignPatterns.exe.config
 D:\Work\Library\DesignPatterns\obj\Debug\DesignPatterns.exe
 D:\Work\Library\DesignPatterns\obj\Debug\DesignPatterns.pdb
+D:\Work\Library\DesignPatterns\bin\Debug\DesignPatterns.exe
+D:\Work\Library\DesignPatterns\bin\Debug\DesignPatterns.pdb
+D:\Work\Library\DesignPatterns\obj\Debug\DesignPatterns.csprojResolveAssemblyReference.cache

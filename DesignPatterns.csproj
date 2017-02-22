@@ -47,18 +47,22 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="facade\Bank.cs" />
-    <Compile Include="facade\Credit.cs" />
-    <Compile Include="facade\Customer.cs" />
-    <Compile Include="facade\Loan.cs" />
-    <Compile Include="facade\Mortgage.cs" />
+    <Compile Include="facadeDesignPattern\Bank.cs" />
+    <Compile Include="facadeDesignPattern\Credit.cs" />
+    <Compile Include="facadeDesignPattern\Customer.cs" />
+    <Compile Include="facadeDesignPattern\facade.cs" />
+    <Compile Include="facadeDesignPattern\Loan.cs" />
+    <Compile Include="facadeDesignPattern\Mortgage.cs" />
     <Compile Include="FactoryDesignPattern\Employee.cs" />
     <Compile Include="FactoryDesignPattern\Engineer.cs" />
+    <Compile Include="FactoryDesignPattern\Factory.cs" />
     <Compile Include="FactoryDesignPattern\Manager.cs" />
+    <Compile Include="ObserverDesignPattern\Observer.cs" />
+    <Compile Include="Shared\IPattern.cs" />
     <Compile Include="ObserverDesignPattern\IObserver.cs" />
     <Compile Include="ObserverDesignPattern\LanguageObserver.cs" />
     <Compile Include="ObserverDesignPattern\LanguageTracker.cs" />
-    <Compile Include="ObserverDesignPattern\ISubject.cs" />
+    <Compile Include="ObserverDesignPattern\ITracker.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="StrategyDesignPattern\Animal.cs" />
@@ -67,6 +71,7 @@
     <Compile Include="StrategyDesignPattern\CantFly.cs" />
     <Compile Include="StrategyDesignPattern\Dog.cs" />
     <Compile Include="StrategyDesignPattern\IFly.cs" />
+    <Compile Include="StrategyDesignPattern\Strategy.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

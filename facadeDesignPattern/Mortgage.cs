@@ -4,8 +4,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DesignPatterns.facade
+namespace DesignPatterns.facadeDesignPattern
 {
+    /// <summary>
+    /// We have a specifi cycle with multiple steps, Instead of defining all object more and more and check conditions and steps each time
+    /// Make One Class that combines all of these together and call once!
+    /// Can't be simpler.
+    /// It's a facade, so it should always start with small letter, don't know why :D
+    /// </summary>
     public class Mortgage
     {
         private Bank _bank;
@@ -19,6 +25,10 @@ namespace DesignPatterns.facade
             _credit = new Credit();
         }
 
+        /// <summary>
+        /// Check all conditions on all classes and return a conclusion status
+        /// </summary>
+        /// <returns>Eligibility</returns>
         public bool IsEligible(Customer cust, int amount)
         {
             Console.WriteLine("{0} applies for {1:C} loan\n", cust.Name, amount);

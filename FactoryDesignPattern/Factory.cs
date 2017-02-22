@@ -3,8 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using DesignPatterns.FactoryDesignPattern;
+using DesignPatterns.Shared;
 
-namespace DesignPatterns.FactoryDesignPattern
+namespace DesignPatterns
 {
     /// <summary>
     /// #Motivation
@@ -27,19 +29,31 @@ namespace DesignPatterns.FactoryDesignPattern
     ///     3. Each derived class will have a different [OVERRIDEN] declaration CalculateSalary method.
     ///     4. You're Done !
     /// </summary>
-    public class Engineer : Employee
+    internal class Factory : IPattern
     {
-        public Engineer(double extraHoursCount)
+        public void Test()
         {
-            this.ExtraHoursCount = extraHoursCount ;
-            this.ExtraHoursRate = 100;
-            this.BasicSalary = 4000;
-            this.Bonus = 150;
-        }
+            Employee employee = null;
 
-        public override double CalculateSalary()
-        {
-            return BasicSalary + ExtraHoursCount*ExtraHoursRate + Bonus + 500000;// Even the other one is manager, Engineers should be the best
+            Console.WriteLine("Enter Employee Type");
+            Console.WriteLine("1. Engineer");
+            Console.WriteLine("2. Manager");
+
+            int type = Convert.ToInt32(Console.ReadLine());
+            switch (type)
+            {
+                case 1:
+                    employee = new Engineer(1200);
+                    break;
+                case 2:
+                    employee = new Manager(1200);
+                    break;
+                default:
+                    Console.WriteLine("Unexpected Input");
+                    break;
+            }
+            if (employee != null)
+                Console.WriteLine(employee.ToString());
         }
     }
 }
