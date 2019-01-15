@@ -47,6 +47,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AdapterDesignPattern\Adapter.cs" />
+    <Compile Include="AdapterDesignPattern\FrenchPerson.cs" />
+    <Compile Include="AdapterDesignPattern\FrenchPersonAdapter.cs" />
+    <Compile Include="AdapterDesignPattern\IFrenchPerson.cs" />
+    <Compile Include="AdapterDesignPattern\IPerson.cs" />
+    <Compile Include="AdapterDesignPattern\Person.cs" />
+    <Compile Include="AdapterDesignPattern\PersonService.cs" />
     <Compile Include="facadeDesignPattern\Bank.cs" />
     <Compile Include="facadeDesignPattern\Credit.cs" />
     <Compile Include="facadeDesignPattern\Customer.cs" />

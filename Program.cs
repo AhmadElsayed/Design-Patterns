@@ -25,6 +25,10 @@ namespace DesignPatterns
             generator = new facade();
             generator.Test();
 
+            Console.WriteLine("=======================Adapter=====================");
+            generator = new Adapter();
+            generator.Test();
+
             Console.ReadLine();
         }
        
