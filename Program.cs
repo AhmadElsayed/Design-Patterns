@@ -29,6 +29,10 @@ namespace DesignPatterns
             generator = new Adapter();
             generator.Test();
 
+            Console.WriteLine("=======================Decorator=====================");
+            generator = new Decorator();
+            generator.Test();
+
             Console.ReadLine();
         }
        
