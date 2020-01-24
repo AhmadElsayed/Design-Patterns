@@ -10,6 +10,8 @@ Implementation of some of GOF design patterns using CSharp
 - Factory Design Pattern
 - Observer Design Pattern
 - Strategy Design Pattern
+- Adapter Design Pattern
+- Decorator Design Pattern
 
 #Contributing
 - Fork It

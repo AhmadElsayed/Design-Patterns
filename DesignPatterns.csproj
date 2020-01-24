@@ -54,6 +54,16 @@
     <Compile Include="AdapterDesignPattern\IPerson.cs" />
     <Compile Include="AdapterDesignPattern\Person.cs" />
     <Compile Include="AdapterDesignPattern\PersonService.cs" />
+    <Compile Include="DecoratorDesignPattern\Beverage.cs" />
+    <Compile Include="DecoratorDesignPattern\CondimentDecorator.cs" />
+    <Compile Include="DecoratorDesignPattern\DarkRoast.cs" />
+    <Compile Include="DecoratorDesignPattern\Decaf.cs" />
+    <Compile Include="DecoratorDesignPattern\Decorator.cs" />
+    <Compile Include="DecoratorDesignPattern\Espresso.cs" />
+    <Compile Include="DecoratorDesignPattern\HouseBlend.cs" />
+    <Compile Include="DecoratorDesignPattern\Mocha.cs" />
+    <Compile Include="DecoratorDesignPattern\Soy.cs" />
+    <Compile Include="DecoratorDesignPattern\Whip.cs" />
     <Compile Include="facadeDesignPattern\Bank.cs" />
     <Compile Include="facadeDesignPattern\Credit.cs" />
     <Compile Include="facadeDesignPattern\Customer.cs" />
