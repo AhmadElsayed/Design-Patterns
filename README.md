@@ -12,6 +12,7 @@ Implementation of some of GOF design patterns using CSharp
 - Strategy Design Pattern
 - Adapter Design Pattern
 - Decorator Design Pattern
+- Mediator Design Pattern
 
 #Contributing
 - Fork It
