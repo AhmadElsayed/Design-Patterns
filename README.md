@@ -20,23 +20,6 @@ Implementation of some of GOF design patterns using CSharp
 - Submit a pull request
 - Welcome on board :-D
 
-#License
-Some text to skip down here :D
+![Watch](https://ci6.googleusercontent.com/proxy/_wmfbudKjo_kCJGGysIBnFDF8sY7icQuZ7sbF33850TPYL7NtqIma8VordIEq418xvoBG_WefhLJcTZxM6Tm316DhYEBCMIxTWWbtcEwUZ_rdubG73Hd3lbJaFj-liAJqWtc98kGDgB6Wt3mqj9V35RVQNw0g4I5R8qfpzw4xnXS-lEttN7Uvb95PtVfWcvNLKnIPfBNhuo=s0-d-e1-ft#https://my-email-signature.link/signature.gif?u=44364&e=114784234&v=e5d2d4f541b81e2410634fb7a91ff89d6d16833ae863641dd769b77bbb0a6a29 570)
 
-MIT License
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
