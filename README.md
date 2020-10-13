@@ -12,6 +12,7 @@ Implementation of some of GOF design patterns using CSharp
 - Strategy Design Pattern
 - Adapter Design Pattern
 - Decorator Design Pattern
+- Mediator Design Pattern
 
 #Contributing
 - Fork It
@@ -19,23 +20,6 @@ Implementation of some of GOF design patterns using CSharp
 - Submit a pull request
 - Welcome on board :-D
 
-#License
-Some text to skip down here :D
+![Watch](https://ci6.googleusercontent.com/proxy/_wmfbudKjo_kCJGGysIBnFDF8sY7icQuZ7sbF33850TPYL7NtqIma8VordIEq418xvoBG_WefhLJcTZxM6Tm316DhYEBCMIxTWWbtcEwUZ_rdubG73Hd3lbJaFj-liAJqWtc98kGDgB6Wt3mqj9V35RVQNw0g4I5R8qfpzw4xnXS-lEttN7Uvb95PtVfWcvNLKnIPfBNhuo=s0-d-e1-ft#https://my-email-signature.link/signature.gif)
 
-MIT License
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
