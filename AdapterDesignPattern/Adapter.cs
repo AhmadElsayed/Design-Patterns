@@ -1,12 +1,11 @@
-﻿using DesignPatterns.Shared;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using DesignPatterns.AdapterDesignPattern;
+using DesignPatternsCore.AdapterDesignPattern;
 
-namespace DesignPatterns
+namespace DesignPatternsCore
 {
     /// <summary>
     /// #Motivation
@@ -31,7 +30,7 @@ namespace DesignPatterns
         {
             var service = new PersonService();
             var person = new Person { Name = "Jeff" };
-            var frenchPerson = new FrenchPerson { Nom= "Jacques"};
+            var frenchPerson = new FrenchPerson { Nom = "Jacques" };
 
             Console.WriteLine("Person:");
             service.PrintName(person);

@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DesignPatterns.Mediator
+namespace DesignPatternsCore.Mediator
 {
     /// <summary>
     /// The interface of the IMediator

@@ -5,7 +5,7 @@ using System.Reflection.Emit;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DesignPatterns.Mediator
+namespace DesignPatternsCore.Mediator
 {
     /// <summary>
     /// The concrete implementation for the Mediator

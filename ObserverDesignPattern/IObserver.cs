@@ -1,5 +1,5 @@
 ﻿
-namespace DesignPatterns.ObserverDesignPattern
+namespace DesignPatternsCore.ObserverDesignPattern
 {
     internal enum EnumLanguage
     {

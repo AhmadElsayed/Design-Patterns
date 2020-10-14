@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DesignPatterns.AdapterDesignPattern
+namespace DesignPatternsCore.AdapterDesignPattern
 {
     /// <summary>
     /// #Motivation
@@ -23,7 +23,7 @@ namespace DesignPatterns.AdapterDesignPattern
     ///     2. Create [AT LEAST ONE] Adapter class which implements the Adapter interface from #1
     ///     3. Now I can 'transform' a specific implementation of Person as if it were just a regular Person => can be used in PersonService!
     /// </summary>
-    public class FrenchPersonAdapter :  IPerson
+    public class FrenchPersonAdapter : IPerson
     {
         private readonly IFrenchPerson _frenchPerson;
 

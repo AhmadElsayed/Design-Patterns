@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DesignPatterns.facadeDesignPattern
+namespace DesignPatternsCore.facadeDesignPattern
 {
     /// <summary>
     /// We have a specifi cycle with multiple steps, Instead of defining all object more and more and check conditions and steps each time

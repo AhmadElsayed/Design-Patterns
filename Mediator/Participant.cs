@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DesignPatterns.Mediator
+namespace DesignPatternsCore.Mediator
 {
     /// <summary>
     /// All the participants (members) will inherit from this bsae class

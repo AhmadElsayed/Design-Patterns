@@ -1,4 +1,4 @@
-﻿namespace DesignPatterns.Shared
+﻿namespace DesignPatternsCore
 {
     /// <summary>
     /// All test classes for all patterns will have to implement this interface

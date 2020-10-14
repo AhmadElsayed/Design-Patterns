@@ -4,24 +4,24 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DesignPatterns.DecoratorPattern
+namespace DesignPatternsCore.DecoratorPattern
 {
-    public class Whip : CondimentDecorator
+    public class Mocha : CondimentDecorator
     {
         Beverage beverage;
-        public Whip(Beverage concreteBev)
+        public Mocha(Beverage concreteBeverage)
         {
-            beverage = concreteBev;
+            beverage = concreteBeverage;
         }
 
         public override string GetDescription()
         {
-            return beverage.GetDescription() + ", Whip";
+            return beverage.GetDescription() + ", Mocha";
         }
 
         public override double Cost()
         {
-            return 0.10 + beverage.Cost();
+            return 0.20 + beverage.Cost();
         }
     }
 }

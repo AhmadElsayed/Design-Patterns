@@ -4,18 +4,18 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DesignPatterns.DecoratorPattern
+namespace DesignPatternsCore.DecoratorPattern
 {
-    public class Decaf : Beverage
+    public class HouseBlend : Beverage
     {
-        public Decaf()
+        public HouseBlend()
         {
-            description = "Decaf Coffee";
+            description = "House Blend Coffee";
         }
 
         public override double Cost()
         {
-            return 1.05;
+            return 0.89;
         }
     }
 }

@@ -1,12 +1,11 @@
-﻿using DesignPatterns.DecoratorPattern;
-using DesignPatterns.Shared;
+﻿using DesignPatternsCore.DecoratorPattern;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DesignPatterns
+namespace DesignPatternsCore
 {
     internal class Decorator : IPattern
     {
@@ -51,7 +50,9 @@ namespace DesignPatterns
 
             Beverage beverage2 = new DarkRoast();
             beverage2 = new Mocha(beverage2);
+            Console.WriteLine($"{beverage2.GetDescription()} ${beverage2.Cost()}");
             beverage2 = new Mocha(beverage2);
+            Console.WriteLine($"{beverage2.GetDescription()} ${beverage2.Cost()}");
             beverage2 = new Whip(beverage2);
             Console.WriteLine($"{beverage2.GetDescription()} ${beverage2.Cost()}");
 
@@ -59,6 +60,7 @@ namespace DesignPatterns
             beverage3 = new Soy(beverage3);
             beverage3 = new Mocha(beverage3);
             beverage3 = new Whip(beverage3);
+            
             Console.WriteLine($"{beverage3.GetDescription()} ${beverage3.Cost()}");
         }
     }

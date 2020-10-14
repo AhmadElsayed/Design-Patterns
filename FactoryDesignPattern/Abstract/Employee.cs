@@ -1,10 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Reflection.Emit;
+using System.Security.AccessControl;
 
-namespace DesignPatterns.FactoryDesignPattern
+namespace DesignPatternsCore.FactoryDesignPattern
 {
     /// <summary>
     /// #Motivation
@@ -27,19 +26,25 @@ namespace DesignPatterns.FactoryDesignPattern
     ///     3. Each derived class will have a different [OVERRIDEN] declaration CalculateSalary method.
     ///     4. You're Done !
     /// </summary>
-    public class Engineer : Employee
+    public abstract class Employee
     {
-        public Engineer(double extraHoursCount)
-        {
-            this.ExtraHoursCount = extraHoursCount ;
-            this.ExtraHoursRate = 100;
-            this.BasicSalary = 4000;
-            this.Bonus = 150;
-        }
+        public double BasicSalary { get; set; }
 
-        public override double CalculateSalary()
+        public double Bonus { get; set; }
+
+        public double ExtraHoursRate { set; get; }
+
+        public double ExtraHoursCount { set; get; }
+        
+        public abstract double CalculateSalary();
+
+        public override string ToString()
         {
-            return BasicSalary + ExtraHoursCount*ExtraHoursRate + Bonus + 500000;// Even the other one is manager, Engineers should be the best
+            return "Basic Salary:" + BasicSalary + Environment.NewLine
+                + "Bonus:" + Bonus + Environment.NewLine
+                + "Extra Hours Rate:" + ExtraHoursRate + Environment.NewLine
+                + "Extra Hours Count:" + ExtraHoursCount + Environment.NewLine
+                + "Total Salary:" + CalculateSalary();
         }
     }
 }

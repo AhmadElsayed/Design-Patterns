@@ -3,10 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using DesignPatterns.FactoryDesignPattern;
-using DesignPatterns.Shared;
+using DesignPatternsCore.FactoryDesignPattern;
 
-namespace DesignPatterns
+namespace DesignPatternsCore
 {
     /// <summary>
     /// #Motivation
@@ -52,6 +51,9 @@ namespace DesignPatterns
                     Console.WriteLine("Unexpected Input");
                     break;
             }
+
+            // Do action based on the Employee Class (ex: Calculate Salary)
+
             if (employee != null)
                 Console.WriteLine(employee.ToString());
         }

@@ -1,7 +1,7 @@
 ﻿
 using System.Collections.Generic;
 
-namespace DesignPatterns.ObserverDesignPattern
+namespace DesignPatternsCore.ObserverDesignPattern
 {
     /// <summary>
     /// #Motivation

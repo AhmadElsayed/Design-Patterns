@@ -3,10 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using DesignPatterns.Shared;
-using DesignPatterns.StrategyDesignPattern;
+using DesignPatternsCore.StrategyDesignPattern;
 
-namespace DesignPatterns
+namespace DesignPatternsCore
 {
     /// <summary>
     /// #Motivation

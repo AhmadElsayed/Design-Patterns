@@ -1,12 +1,6 @@
-﻿using DesignPatterns.Mediator;
-using DesignPatterns.Shared;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using DesignPatternsCore.Mediator;
 
-namespace DesignPatterns
+namespace DesignPatternsCore
 {
     /// <summary>
     /// #Motivation

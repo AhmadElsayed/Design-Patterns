@@ -1,14 +1,11 @@
 ﻿using System;
-using DesignPatterns.Shared;
 
-namespace DesignPatterns
+namespace DesignPatternsCore
 {
-    
-    internal class Program
+    class Program
     {
-        private static void Main(string[] args)
+        static void Main(string[] args)
         {
-
             Console.WriteLine("=======================Strategy=====================");
             IPattern generator = new Strategy();
             //generator.Test();
@@ -23,7 +20,7 @@ namespace DesignPatterns
 
             Console.WriteLine("=======================facade=====================");
             generator = new facade();
-            //generator.Test();
+            generator.Test();
 
             Console.WriteLine("=======================Adapter=====================");
             generator = new Adapter();
@@ -31,14 +28,13 @@ namespace DesignPatterns
 
             Console.WriteLine("=======================Decorator=====================");
             generator = new Decorator();
-            //generator.Test();
+            // generator.Test();
 
             Console.WriteLine("=======================Mediator=====================");
             generator = new MediatorRunner();
-            generator.Test();
+            //generator.Test();
 
             Console.ReadLine();
         }
-       
     }
 }

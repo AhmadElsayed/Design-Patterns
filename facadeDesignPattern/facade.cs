@@ -1,11 +1,11 @@
 ﻿using System;
-using DesignPatterns.facadeDesignPattern;
-using DesignPatterns.Shared;
+using DesignPatternsCore.facadeDesignPattern;
 
-namespace DesignPatterns
+namespace DesignPatternsCore
 {
     /// <summary>
-    /// We have a specifi cycle with multiple steps, Instead of defining all object more and more and check conditions and steps each time
+    /// We have a specifi cycle with multiple steps,
+    /// Instead of defining all objects more and more and check conditions and steps each time
     /// Make One Class that combines all of these together and call once!
     /// Can't be simpler.
     /// It's a facade, so it should always start with small letter, don't know why :D
